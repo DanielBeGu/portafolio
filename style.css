@@ -6,11 +6,20 @@
 *****************************************/
 :root {
   /* Colores */
-  --primario: #ffffff;
-  --secundario: #000000;
+  --primario: #0d0d0d;
+  --secundario: #1b261a;
+  --secundario2: #a5aca5;
+  --secundario3: #c9cdc9;
+  --terciario: #b14a46;
+  --terciario2: #e5968b;
+  --terciario3: #f2cbc5;
+  --terciario4: #efdbda;
+  --cuaternario: #d5c3aa;
+  --cuaternario3: #fff6dc;
+  --blanco: #ffffff;
   /* Tipografía */
-  --font-family-body: serif;
-  --font-family-headings: sans-serif;
+  --font-family-headings: "Darker Grotesque", sans-serif;
+  --font-family-body: "Source Sans Pro", sans-serif;
 }
 
 /****************************************
@@ -30,26 +39,27 @@ h3,
 h4,
 h5 {
   font-family: var(--font-family-headings);
+  font-weight: 400;
 }
-
 h1 {
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 33px;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 27px;
+  font-size: 30px;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 27px;
 }
 
 h5 {
-  font-size: 19px;
+  font-size: 24px;
 }
 
 /****************************************
