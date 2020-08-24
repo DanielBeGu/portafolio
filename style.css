@@ -1,5 +1,5 @@
 /* Tipografía */
-@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600&family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;600;800&family=Source+Sans+Pro&display=swap");
 
 /****************************************
 *    Variables
@@ -37,13 +37,15 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-family: var(--font-family-headings);
   font-weight: 400;
 }
 h1 {
   font-size: 45px;
   font-weight: 600;
+  color: var(--terciario);
 }
 
 h2 {
@@ -62,18 +64,68 @@ h5 {
   font-size: 24px;
 }
 
+h6 {
+  font-weight: 800;
+}
+
 /****************************************
 *    Temp
 *****************************************/
 /* TODO: Ejercicio aplicar estilos de figma a cajas */
-
+.caja {
+  display: flex;
+}
+.caja > * {
+  outline: rgba(255, 0, 0, 0.75) dotted 2px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 20px;
+}
+.caja h2 {
+  font-size: 90px;
+}
 /****************************************
 *    Componentes
 *****************************************/
-
+.contenedor {
+  background: var(--secundario2);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-items: space-between;
+}
+.contenedor h6 {
+  background: var(--secundario3);
+  height: 25vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor nav ul {
+  background: var(--secundario3);
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+.contenedor a {
+  font-family: var(--font-family-headings);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 75px;
+  letter-spacing: 0.0001em;
+  font-weight: 800;
+}
 /****************************************
 *    Helpers
 *****************************************/
+/*-webkit-text-stroke: .5px black;*/
+
 [dots] {
   outline: rgba(255, 0, 0, 0.75) dotted 2px;
 }
