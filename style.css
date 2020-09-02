@@ -10,7 +10,7 @@
   --secundario: #1b261a;
   --secundario2: #a5aca5;
   --secundario3: #c9cdc9;
-  --terciario: #b14a46;
+  --terciario: #e77971;
   --terciario2: #e5968b;
   --terciario3: #f2cbc5;
   --terciario4: #efdbda;
@@ -41,11 +41,11 @@ h5,
 h6 {
   font-family: var(--font-family-headings);
   font-weight: 400;
+  -webkit-text-stroke: 0.5px black;
 }
 h1 {
   font-size: 45px;
   font-weight: 600;
-  color: var(--terciario);
 }
 
 h2 {
@@ -66,6 +66,9 @@ h5 {
 
 h6 {
   font-weight: 800;
+}
+h6 span {
+  color: black;
 }
 
 /****************************************
@@ -94,37 +97,42 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-items: space-between;
+  -webkit-text-stroke: 0.5px black;
 }
 .contenedor h6 {
-  background: var(--secundario3);
+  background: var(--terciario);
   height: 25vh;
   width: 100%;
   text-align: center;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
 }
 .contenedor nav ul {
-  background: var(--secundario3);
+  background: var(--blanco);
   height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
+  -webkit-text-stroke: 0.5px black;
+}
+.contenedor nav ul span {
+  color: black;
 }
 .contenedor a {
   font-family: var(--font-family-headings);
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: white;
   font-size: 75px;
   letter-spacing: 0.0001em;
   font-weight: 800;
+  -webkit-text-stroke: 1px black;
 }
 /****************************************
 *    Helpers
 *****************************************/
-/*-webkit-text-stroke: .5px black;*/
 
 [dots] {
   outline: rgba(255, 0, 0, 0.75) dotted 2px;
