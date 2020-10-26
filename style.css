@@ -235,25 +235,62 @@ a {
 
 /* Carteles */
 .carteles {
-  backrgound: var(--terciario4);
+  background: var(--terciario4);
 }
-.carteles__heading {
+.cartel__item {
+  position: relative;
+  margin: 2rem;
+  transition: all 0.4s ease-in-out;
+}
+.cartel__item > * {
+  transition: all 0.4s ease-in-out;
+}
+.cartel__item:hover img {
+  filter: invert(40%);
+}
+.cartel__info {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7);
+}
+.cartel__info::after {
+  content: attr(data-year);
+  display: block;
+}
+.cartel__item:hover figcaption {
+  visibility: visible;
+  transition: all 0.4s ease-in-out;
+}
+.cartel__heading {
   background-color: white;
   grid-row: 1/2;
   grid-column: 1/5;
   padding-left: 4rem;
   border-bottom: 1px solid black;
 }
-.carteles__contenedor {
+.cartel__contenedor {
   background: var(--terciario4);
   display: flex;
   justify-content: space-between;
 }
-.carteles__imagen {
-  width: 50vh;
+.cartel__imagen {
+  width: 340px;
+  height: 480px;
+
+  /* width: 50vh;
   padding-left: 30px;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 50px; */
 }
 
 /* Contacto */
